@@ -17,7 +17,18 @@ fun main() {
     println("High salaries:")
     val salaryFilter=salary.filter { it>1900.0 }
     salaryFilter.forEach { println(it) }
-
-
-
+    println(LINE)
+    println("How many salaries above 1000?")
+    println(salary.count { it>1000.00})
+    println("'.find' method using value > 4000 \n")
+    println(salary.find { it>4000.00 })
+    println("'.find' method using value == 2.00 \n")
+    println(salary.find { it == 2.00 })
+    println("'.find' method using value == 3.00 \n")
+    println(salary.find { it == 3.00 })
+    println("'.any' method using value == 2.00 \n")
+    println(salary.any { it == 2.00 })
+    println("'.find' method using value == 3.00 \n")
+    println(salary.any { it == 3.00 })
+    
 }
