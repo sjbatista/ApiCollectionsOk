@@ -5,7 +5,7 @@ import org.springframework.boot.runApplication
 
 @SpringBootApplication
 
-class testArrayString
+class TestArrayString
 
 fun main(args: Array<String>) {
     println(LINE)
