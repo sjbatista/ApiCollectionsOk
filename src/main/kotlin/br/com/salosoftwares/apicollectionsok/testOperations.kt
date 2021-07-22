@@ -8,9 +8,9 @@ fun main() {
     salary.sort()
     salary.forEach { println(it) }
     println("Highest salary:")
-    println(salary.max())
+    println(salary.maxOrNull())
     println("Lowest salary:")
-    println(salary.min())
+    println(salary.minOrNull())
     println("Average salary:")
     println(salary.average())
     println(LINE)
@@ -30,5 +30,5 @@ fun main() {
     println(salary.any { it == 2.00 })
     println("'.find' method using value == 3.00 \n")
     println(salary.any { it == 3.00 })
-    
+
 }
