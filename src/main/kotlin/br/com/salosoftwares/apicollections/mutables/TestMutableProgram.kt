@@ -1,6 +1,7 @@
 package br.com.salosoftwares.apicollections.mutables
 
 import br.com.salosoftwares.apicollectionsok.Employee
+import br.com.salosoftwares.apicollectionsok.LINE
 
 fun main() {
     val pimpolho = Employee("pimpolho",1500.05,"CLT")
@@ -15,5 +16,8 @@ fun main() {
     testRepositorio1.create(vemk.name,vemk)
     testRepositorio1.create(piupiu.name,piupiu)
     testRepositorio1.create(gordox.name,gordox)
+    testRepositorio1.printAllValues()
+    println(LINE)
+    testRepositorio1.removeById(piupiu.name)
     testRepositorio1.printAllValues()
 }

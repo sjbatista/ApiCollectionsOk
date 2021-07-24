@@ -7,5 +7,7 @@ class TestRepositorio<T> {
     fun findById(id: String)=map1[id]
     fun printAllValues()=map1.forEach{println(it)
     println(" ")}
+    fun removeById(id: String)=map1.remove(id)
+
 
 }
